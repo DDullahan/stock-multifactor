@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: atrader
+Version: 3.1.5.12
+Summary: atrader Algorithm Trading System
+Home-page: UNKNOWN
+Author: www.bitpower.com.cn
+Author-email: contact@atrader.com.cn
+License: LICENSE
+Keywords: quantitative,trading
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: enum34 (<=1.1.6,>=1.1.6)
+Requires-Dist: six (<=1.12.0,>=1.11.0)
+Requires-Dist: pytz (<=2018.9,>=2017.3)
+Requires-Dist: python-dateutil (>=2.6.1)
+Requires-Dist: numpy (<1.16.0,>=1.13.3)
+Requires-Dist: scipy (<=1.2.1,>=1.0.0)
+Requires-Dist: pandas (<=0.24.1,>=0.22.0)
+
+=======
+atquant
+=======
+
+atquant 从数据获取、算法交易、回测引擎，实盘模拟，实盘交易到数据分析，为程序化交易者提供了全套解决方案。
+
