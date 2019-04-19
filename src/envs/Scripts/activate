@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="E:\github\stock-multifactor\src\envs"
+VIRTUAL_ENV="E:\project\stock-multifactor\src\envs"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
