@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c853e38d-aac1-483e-aff5-7e56d5cd2c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProblemA/SingleFactor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SW_class.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/factorName.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemB/EqualWeight.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemA/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemA/ThreeLines.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/ThreeLines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemA/TwoLines.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/TwoLines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemA/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProblemA/original/ExponentialEnhancement.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/original/ExponentialEnhancement.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,47 +18,24 @@
     <SUITE FILE_PATH="coverage/src$ExponentialEnhancement__1_.coverage" NAME="ExponentialEnhancement (1) Coverage Results" MODIFIED="1555726257304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA/original" />
     <SUITE FILE_PATH="coverage/src$treelines.coverage" NAME="treelines Coverage Results" MODIFIED="1555594878214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
     <SUITE FILE_PATH="coverage/src$SingleFactor.coverage" NAME="SingleFactor Coverage Results" MODIFIED="1555808184156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
+    <SUITE FILE_PATH="coverage/src$EqualWeight.coverage" NAME="EqualWeight Coverage Results" MODIFIED="1555857064504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemB" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProblemA/main.py">
+        <entry file="file://$PROJECT_DIR$/ProblemA/TwoLines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-              <folding>
-                <element signature="e#92#113#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="416">
+              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ProblemA/SingleFactor.py">
+        <entry file="file://$PROJECT_DIR$/ProblemB/EqualWeight.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
-              <folding>
-                <element signature="e#91#113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/factorName.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            <state relative-caret-position="156">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -90,13 +59,14 @@
         <option value="$PROJECT_DIR$/ProblemA/main.ipynb" />
         <option value="$PROJECT_DIR$/ProblemA/treelines.py" />
         <option value="$PROJECT_DIR$/ProblemA/ThreeLines.py" />
-        <option value="$PROJECT_DIR$/ProblemA/TwoLines.py" />
         <option value="$PROJECT_DIR$/ProblemA/main.py" />
         <option value="$PROJECT_DIR$/ProblemA/original/ExponentialEnhancement.py" />
         <option value="$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py" />
         <option value="$PROJECT_DIR$/ProblemA/README.md" />
         <option value="$PROJECT_DIR$/ProblemA/arg.py" />
         <option value="$PROJECT_DIR$/ProblemA/SingleFactor.py" />
+        <option value="$PROJECT_DIR$/ProblemA/TwoLines.py" />
+        <option value="$PROJECT_DIR$/ProblemB/EqualWeight.py" />
       </list>
     </option>
   </component>
@@ -112,7 +82,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,23 +94,18 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ProblemA" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="src" type="b2602c69:ProjectViewProjectNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ProblemA" type="462c0819:PsiDirectoryNode" />
-              <item name="original" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -162,7 +126,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SingleFactor">
+  <component name="RunManager" selected="Python.EqualWeight">
+    <configuration name="EqualWeight" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemB" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemB/EqualWeight.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="ExponentialEnhancement (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -229,28 +215,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TwoLines" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemA" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemA/TwoLines.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -275,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.EqualWeight" />
         <item itemvalue="Python.SingleFactor" />
         <item itemvalue="Python.ExponentialEnhancement" />
         <item itemvalue="Python.ExponentialEnhancement (1)" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.TwoLines" />
       </list>
     </recent_temporary>
   </component>
@@ -297,12 +261,13 @@
       <workItem from="1555629119094" duration="6403000" />
       <workItem from="1555719632871" duration="7327000" />
       <workItem from="1555761995488" duration="9110000" />
-      <workItem from="1555805820506" duration="3839000" />
+      <workItem from="1555805820506" duration="4439000" />
+      <workItem from="1555849698488" duration="7348000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37742000" />
+    <option name="totallyTimeSpent" value="45690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-7" width="1478" height="878" extended-state="6" />
@@ -383,13 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProblemA/TwoLines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-572">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProblemA/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -400,6 +358,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProblemA/arg.py" />
     <entry file="file://$PROJECT_DIR$/ProblemA/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -410,10 +369,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProblemA/arg.py">
+    <entry file="file://$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        <state relative-caret-position="1872">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -424,20 +383,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py">
+    <entry file="file://$PROJECT_DIR$/ProblemA/SingleFactor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="75" column="30" lean-forward="true" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+        <state relative-caret-position="-1040">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProblemA/SingleFactor.py">
+    <entry file="file://$PROJECT_DIR$/ProblemA/TwoLines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="134" column="19" selection-start-line="134" selection-start-column="19" selection-end-line="134" selection-end-column="19" />
-          <folding>
-            <element signature="e#91#113#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="416">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProblemB/EqualWeight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
