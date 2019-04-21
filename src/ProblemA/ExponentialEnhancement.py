@@ -1,16 +1,9 @@
 # -*- coding: utf-8 -*-
 """
--------------------------------------------------
-   File Name：     指数增强
-   Description :
-   Author :       haoyuan.m
-   date：          2018/10/11
--------------------------------------------------
-   Change Activity:
-                   2018/10/11:
--------------------------------------------------
+  @author DDullahan
+  @date 2019-4-18 09:35
+  @version 1.0
 """
-__author__ = 'haoyuan.m'
 
 from atrader import *
 import numpy as np
@@ -29,7 +22,7 @@ import datetime as dt
 
 def init(context):
     set_backtest(initial_cash=10000000)
-    reg_kdata('day', 1)
+    reg_factor(factor=['PE'])
     context.ratio = 0.8
     context.cons_date = '2016-12-31'
     context.hs300 = get_code_list('hs300', context.cons_date)[['code', 'weight']]
@@ -41,12 +34,11 @@ def init(context):
 def on_data(context):
     positions = context.account().positions['volume_long']
     #total_asset = context.account().cash['total_asset'].iloc[0]
-    data = get_reg_kdata(reg_idx=context.reg_kdata[0], length=6, fill_up=True, df=True)
-    if data['close'].isna().any():
+    data = get_reg_factor(reg_idx=context.reg_factor[0], length=6, df=True)
+    if data['value'].isna().any():
         return
     print(data)
     datalist = [data[data['target_idx'] == x] for x in pd.unique(data.target_idx)]
-    print(datalist)
     for target in datalist:
         target_idx = target.target_idx.iloc[0]
         position = positions.iloc[target_idx]
@@ -57,7 +49,7 @@ def on_data(context):
             # print(context.now, context.target_list[target_idx], '以市价单开多仓至仓位:', buy_percent * 100, '%')
         else:
             # 获取过去5天的价格数据,若连续上涨则为强势股,权重+0.2;若连续下跌则为弱势股,权重-0.2
-            recent_data = target['close'].tolist()
+            recent_data = target['value'].tolist()
             if all(np.diff(recent_data) > 0):
                 buy_percent = context.hs300.iloc[target_idx]['weight'] / context.sum_weight * (context.ratio + 0.2)
                 order_target_percent(account_idx=0, target_idx=target_idx, target_percent=buy_percent, side=1,
@@ -72,7 +64,7 @@ def on_data(context):
 
 if __name__ == '__main__':
     begin = '2017-01-01'
-    end = '2018-01-01'
+    end = '2017-03-01'
     cons_date = dt.datetime.strptime(begin, '%Y-%m-%d') - dt.timedelta(days=1)
     hs300 = get_code_list('hs300', cons_date)[['code', 'weight']]
     targetlist = hs300[hs300.weight > 0.35]['code']

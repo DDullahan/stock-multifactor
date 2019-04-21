@@ -9,9 +9,10 @@ import numpy as np
 
 DEBUG = True
 
+
 def init(context):
-    # 注册初始资金1000万,股票手续费千分之3
-    set_backtest(initial_cash=10000000, stock_cost_fee=30)
+    # 注册初始资金1000万
+    set_backtest(initial_cash=10000000)
     # 注册因子
     reg_factor(factor=['PE'])
     # 设置参数：
@@ -73,6 +74,3 @@ def on_data(context):
     if DEBUG:
         print('买信号:', buy_signal)
         print('卖信号:', sell_signal)
-
-
-

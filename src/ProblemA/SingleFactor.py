@@ -1,0 +1,135 @@
+# -*- coding: utf-8 -*-
+"""
+  @author DDullahan
+  @date 2019-4-20 20:10
+  @version 1.0
+"""
+from time import sleep
+
+from atrader import *
+import numpy as np
+import pandas as pd
+import datetime as dt
+
+
+def init(context):
+    factor, neg = read()
+    # 注册初始资金1000万
+    set_backtest(initial_cash=10000000)
+    # 注册因子
+    reg_factor(factor=factor)
+    # 基准权重
+    context.ratio = 0.8
+    context.cons_date = '2016-12-31'
+    context.hs300 = get_code_list('hs300', context.cons_date)[['code', 'weight']]
+    context.hs300 = context.hs300[context.hs300.weight > 0.35]
+    context.sum_weight = context.hs300.weight.sum()
+    context.neg = neg
+    # print('选择的成分股权重总和为: ', context.sum_weight, '%')
+
+
+def on_data(context):
+    # 获取持仓状况
+    positions = context.account().positions['volume_long']
+    # 获取最近6天的因子数据
+    data = get_reg_factor(reg_idx=context.reg_factor[0], length=6, df=True)
+    # 存在NaN则略过此次调仓
+    if data['value'].isna().all() or data['date'].isna().any():
+        # print('数据全部NaN或无对应日期的因子数据,跳过')
+        return
+    data = data.dropna()
+    # 获取标的的索引集合
+    datalist = [data[data['target_idx'] == x] for x in pd.unique(data.target_idx)]
+    for target in datalist:
+        # 枚举某一标的
+        target_idx = target.target_idx.iloc[0]
+        position = positions.iloc[target_idx]
+
+        if position == 0:
+            # 若目前对应标的无持股，买入
+            buy_percent = context.hs300.iloc[target_idx]['weight'] / context.sum_weight * context.ratio
+            order_target_percent(account_idx=0, target_idx=target_idx, target_percent=buy_percent, side=1,
+                                 order_type=2, price=0)
+            # print(context.now, context.target_list[target_idx], '以市价单开多仓至仓位:', buy_percent * 100, '%')
+        else:
+            # 获取过去5天的价格数据,若连续上涨则为强势股,权重+0.2;若连续下跌则为弱势股,权重-0.2
+            recent_data = target['value'].tolist()
+            if all(np.diff(recent_data) > 0):
+                buy_percent = context.hs300.iloc[target_idx]['weight'] / context.sum_weight * (
+                        context.ratio + context.neg * 0.2)
+                order_target_percent(account_idx=0, target_idx=target_idx, target_percent=buy_percent, side=1,
+                                     order_type=2, price=0)
+                # print('强势股', context.target_list[target_idx], '以市价单调多仓至仓位:', buy_percent * 100, '%')
+            elif all(np.diff(recent_data) < 0):
+                buy_percent = context.hs300.iloc[target_idx]['weight'] / context.sum_weight * (
+                        context.ratio - context.neg * 0.2)
+                order_target_percent(account_idx=0, target_idx=target_idx, target_percent=buy_percent, side=1,
+                                     order_type=2, price=0)
+                # print('弱势股',  context.target_list[target_idx], '以市价单调空仓至仓位:', buy_percent * 100, '%')
+
+
+def start_backtest(begin, end, added):
+    factor, neg = read()
+    # 获取成分大于0.35的股份代码
+    cons_date = dt.datetime.strptime(begin, '%Y-%m-%d') - dt.timedelta(days=1)
+    hs300 = get_code_list('hs300', cons_date)[['code', 'weight']]
+    target_list = list(hs300[hs300.weight > 0.35]['code'])
+    # 开始回测
+    run_backtest(strategy_name=factor+'-'+added,
+                 file_path='.',
+                 target_list=target_list,
+                 frequency='day',
+                 fre_num=1,
+                 begin_date=begin,
+                 end_date=end,
+                 fq=1)
+
+
+def write(factor, neg):
+    f = open('arg.txt', 'w')
+    f.write(factor + '\n')
+    f.write(str(neg))
+    f.close()
+
+
+def read():
+    f = open('arg.txt', 'r')
+    factor = f.readline().rstrip('\n')
+    neg = int(f.readline().rstrip('\n'))
+    f.close()
+    return factor, neg
+
+
+if __name__ == '__main__':
+    # 确定回测时间段
+    begin = '2017-01-01'
+    end = '2017-12-01'
+    # 读取因子名，对其进行单因子回测
+    factors = pd.read_csv('factorName.csv')
+    factors = factors['factor_name']
+    for factor in factors:
+        print('正在回测:', factor)
+        print('回测正相关')
+        write(factor, 1)
+        start_backtest(begin, end, '正')
+        print('回测负相关')
+        write(factor, -1)
+        start_backtest(begin, end, '负')
+        print('回测', factor, '成功')
+        sleep(1)
+    # 获取回测报告数据
+
+    # 暂停10s等待全部回测报告生成
+    sleep(10)
+    reports = []
+    labels = ['cum_return', 'annu_return', 'max_drawback_rate', 'total_property', 'cum_return_bm', 'alpha', 'beta',
+              'sharpe_ratio', 'info_ratio', 'turnover_rate', 'net_profit']
+    results = get_strategy_id()
+    for result in results:
+        report = get_performance(result['strategy_id'])
+        simple_report = {'strategy_name': result['strategy_name']}
+        for label in labels:
+            simple_report[label] = report[label]
+        reports.append(simple_report)
+    pd.DataFrame(data=reports).to_csv('reports.csv')
+    print('所有因子回测结束')
