@@ -11,6 +11,7 @@ back_test_factors = {
     'PE': {'association': 1},
     'PB': {'association': 1}
 }
+
 # 同时持有bucket个标的
 bucket = 10
 begin = '2017-01-01'
@@ -79,3 +80,4 @@ if __name__ == '__main__':
                  begin_date=begin,
                  end_date=end,
                  fq=1)
+    print('回测结束')
