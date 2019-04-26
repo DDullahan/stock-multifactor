@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c853e38d-aac1-483e-aff5-7e56d5cd2c50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProblemB/SVM.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProblemB/NeuralNetWork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemA/SingleFactor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/SingleFactor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemA/ThreeLines.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/ThreeLines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemA/arg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/arg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemA/reports.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemA/reports.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProblemB/EqualWeight.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemB/EqualWeight.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProblemB/SVM.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProblemB/SVM.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,22 +18,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/src$EqualWeight_2.coverage" NAME="EqualWeight_2 Coverage Results" MODIFIED="1556255736074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemB" />
     <SUITE FILE_PATH="coverage/src$main.coverage" NAME="main Coverage Results" MODIFIED="1555723643240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
     <SUITE FILE_PATH="coverage/src$TwoLines.coverage" NAME="TwoLines Coverage Results" MODIFIED="1555630137137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
     <SUITE FILE_PATH="coverage/src$ExponentialEnhancement.coverage" NAME="ExponentialEnhancement Coverage Results" MODIFIED="1555726372358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
+    <SUITE FILE_PATH="coverage/src$Final.coverage" NAME="Final Coverage Results" MODIFIED="1556259818402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemB" />
+    <SUITE FILE_PATH="coverage/src$ThreeLines.coverage" NAME="ThreeLines Coverage Results" MODIFIED="1556261521102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
     <SUITE FILE_PATH="coverage/src$ExponentialEnhancement__1_.coverage" NAME="ExponentialEnhancement (1) Coverage Results" MODIFIED="1555726257304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA/original" />
-    <SUITE FILE_PATH="coverage/src$SVM.coverage" NAME="SVM Coverage Results" MODIFIED="1556072970175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemB" />
+    <SUITE FILE_PATH="coverage/src$SVM.coverage" NAME="SVM Coverage Results" MODIFIED="1556261724714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemB" />
     <SUITE FILE_PATH="coverage/src$treelines.coverage" NAME="treelines Coverage Results" MODIFIED="1555594878214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
-    <SUITE FILE_PATH="coverage/src$SingleFactor.coverage" NAME="SingleFactor Coverage Results" MODIFIED="1555808184156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
-    <SUITE FILE_PATH="coverage/src$EqualWeight.coverage" NAME="EqualWeight Coverage Results" MODIFIED="1556026853947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemB" />
+    <SUITE FILE_PATH="coverage/src$NeuralNetWork.coverage" NAME="NeuralNetWork Coverage Results" MODIFIED="1556263019418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemB" />
+    <SUITE FILE_PATH="coverage/src$SingleFactor.coverage" NAME="SingleFactor Coverage Results" MODIFIED="1556261667445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemA" />
+    <SUITE FILE_PATH="coverage/src$EqualWeight.coverage" NAME="EqualWeight Coverage Results" MODIFIED="1556262163568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ProblemB" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="src" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProblemB/SVM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+            <state relative-caret-position="-2749">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProblemB/EqualWeight.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2106">
+              <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ProblemB/NeuralNetWork.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4290">
+              <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
+              <folding>
+                <element signature="e#24#64#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProblemA/ThreeLines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="e#91#112#0" expanded="true" />
               </folding>
@@ -39,34 +79,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProblemB/EqualWeight.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1638">
-              <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProblemB/JoinQuartSVM.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1643">
-              <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
-              <folding>
-                <element signature="e#106#178#0" expanded="true" />
-                <element signature="e#1392#2458#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProblemA/SingleFactor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1066">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="190">
+              <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
               <folding>
-                <element signature="e#91#113#0" expanded="true" />
+                <element signature="e#24#46#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,17 +108,20 @@
       <list>
         <option value="$PROJECT_DIR$/ProblemA/main.ipynb" />
         <option value="$PROJECT_DIR$/ProblemA/treelines.py" />
-        <option value="$PROJECT_DIR$/ProblemA/ThreeLines.py" />
         <option value="$PROJECT_DIR$/ProblemA/main.py" />
         <option value="$PROJECT_DIR$/ProblemA/original/ExponentialEnhancement.py" />
         <option value="$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py" />
         <option value="$PROJECT_DIR$/ProblemA/README.md" />
         <option value="$PROJECT_DIR$/ProblemA/arg.py" />
-        <option value="$PROJECT_DIR$/ProblemA/SingleFactor.py" />
         <option value="$PROJECT_DIR$/ProblemA/TwoLines.py" />
         <option value="$PROJECT_DIR$/ProblemB/JoinQuartSVM.py" />
-        <option value="$PROJECT_DIR$/ProblemB/EqualWeight.py" />
+        <option value="$PROJECT_DIR$/ProblemB/EqualWeight_2.py" />
+        <option value="$PROJECT_DIR$/ProblemB/Final.py" />
+        <option value="$PROJECT_DIR$/ProblemA/ThreeLines.py" />
+        <option value="$PROJECT_DIR$/ProblemA/SingleFactor.py" />
         <option value="$PROJECT_DIR$/ProblemB/SVM.py" />
+        <option value="$PROJECT_DIR$/ProblemB/NeuralNetWork.py" />
+        <option value="$PROJECT_DIR$/ProblemB/EqualWeight.py" />
       </list>
     </option>
   </component>
@@ -116,7 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,20 +149,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ProblemA" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="src" type="b2602c69:ProjectViewProjectNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ProblemB" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Users/Public/Documents/Bitpower/AT/data/strategyPool/localStrategyPool/6519454776252437679/机器学习多因子选股" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\project\stock-multifactor\src\ProblemB" />
       <recent name="E:\project\stock-multifactor\src" />
       <recent name="E:\project\stock-multifactor\src\ProblemA" />
       <recent name="E:\project\stock-multifactor\src\ProblemA\original" />
@@ -160,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.SVM">
+  <component name="RunManager" selected="Python.NeuralNetWork">
     <configuration name="EqualWeight" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="src" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,7 +211,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="ExponentialEnhancement (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="NeuralNetWork" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="src" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -191,34 +219,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemA/original" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemB" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemA/original/ExponentialEnhancement.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ExponentialEnhancement" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="src" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemA" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemB/NeuralNetWork.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -271,13 +277,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="ThreeLines" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="src" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ProblemA" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ProblemA/ThreeLines.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.SVM" />
+        <item itemvalue="Python.NeuralNetWork" />
         <item itemvalue="Python.EqualWeight" />
+        <item itemvalue="Python.SVM" />
         <item itemvalue="Python.SingleFactor" />
-        <item itemvalue="Python.ExponentialEnhancement" />
-        <item itemvalue="Python.ExponentialEnhancement (1)" />
+        <item itemvalue="Python.ThreeLines" />
       </list>
     </recent_temporary>
   </component>
@@ -300,12 +328,14 @@
       <workItem from="1556000165955" duration="5220000" />
       <workItem from="1556007043256" duration="654000" />
       <workItem from="1556026617698" duration="4903000" />
-      <workItem from="1556067093353" duration="5223000" />
+      <workItem from="1556067093353" duration="8899000" />
+      <workItem from="1556174407108" duration="16732000" />
+      <workItem from="1556236069915" duration="25788000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62744000" />
+    <option name="totallyTimeSpent" value="108940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-7" width="1478" height="878" extended-state="6" />
@@ -313,7 +343,7 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" type="SLIDING" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" weight="0.32957748" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3297587" />
@@ -330,8 +360,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" side_tool="true" weight="0.32957748" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" type="SLIDING" weight="0.25" />
@@ -379,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProblemA/ThreeLines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ProblemA/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -397,23 +420,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProblemA/arg.py" />
-    <entry file="file://$PROJECT_DIR$/ProblemA/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding>
-            <element signature="e#92#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1872">
-          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/factorName.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -435,40 +441,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProblemB/JoinQuartSVM.py">
+    <entry file="file://$PROJECT_DIR$/ProblemB/JoinQuartSVM.py" />
+    <entry file="file://D:/programmer/python/Lib/inspect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1643">
-          <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
+        <state relative-caret-position="158">
+          <caret line="1357" selection-start-line="1357" selection-end-line="1357" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProblemB/EqualWeight_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="43" column="4" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProblemB/Final.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
           <folding>
-            <element signature="e#106#178#0" expanded="true" />
-            <element signature="e#1392#2458#0" />
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProblemA/ExponentialEnhancement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProblemA/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <folding>
+            <element signature="e#92#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProblemA/SingleFactor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1066">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="190">
+          <caret line="88" column="34" selection-start-line="88" selection-start-column="34" selection-end-line="88" selection-end-column="34" />
           <folding>
-            <element signature="e#91#113#0" expanded="true" />
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProblemB/SVM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2749">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProblemA/ThreeLines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#91#112#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProblemB/EqualWeight.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="63" column="54" selection-start-line="63" selection-start-column="54" selection-end-line="63" selection-end-column="54" />
+        <state relative-caret-position="2106">
+          <caret line="81" column="4" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProblemB/SVM.py">
+    <entry file="file://$PROJECT_DIR$/ProblemB/NeuralNetWork.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+        <state relative-caret-position="4290">
+          <caret line="165" lean-forward="true" selection-start-line="165" selection-end-line="165" />
           <folding>
-            <element signature="e#91#112#0" expanded="true" />
+            <element signature="e#24#64#0" expanded="true" />
           </folding>
         </state>
       </provider>
