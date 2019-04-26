@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-  @author DDullahan
-  @date 2019-4-18 21:17
-  @version 1.0
-"""
 from atrader import *
 import numpy as np
 
@@ -31,11 +26,6 @@ def on_data(context):
         print('过去' + str(context.win) + '天因子数据:')
         print(data)
 
-    # 如果因子结果出现NaN 结束预测
-    if data['value'].isna().any():
-        if DEBUG:
-            print('数据存在NaN')
-        return
     # 获取收盘价数据
     close = data.value.values.reshape(-1, context.win).astype(float)
     # 计算均线值：
@@ -74,3 +64,18 @@ def on_data(context):
     if DEBUG:
         print('买信号:', buy_signal)
         print('卖信号:', sell_signal)
+
+
+if __name__ == '__main__':
+    begin = '2017-01-01'
+    end = '2017-06-01'
+    target_list = get_code_list('hs300')[['code']]
+    target_list = list(target_list['code'])
+    run_backtest(strategy_name='单因子',
+                 file_path='.',
+                 target_list=target_list,
+                 frequency='month',
+                 fre_num=1,
+                 begin_date=begin,
+                 end_date=end,
+                 fq=1)

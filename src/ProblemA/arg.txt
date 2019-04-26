@@ -1,2 +1,2 @@
 CurrentAssetsRatio
--1
+1

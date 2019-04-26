@@ -1,21 +1,20 @@
 # -*- coding: utf-8 -*-
-"""
-  @author DDullahan
-  @date 2019-4-21 20:31
-  @version 1.0
-"""
 from atrader import *
 
 # 注册多因子 association为1表示正相关 为-1表示负相关
 back_test_factors = {
     'PE': {'association': 1},
-    'PB': {'association': 1}
+    'PB': {'association': 1},
+    'PS': {'association': 1},
+    'NetWorkingCapital': {'association': -1},
+    'NetDebt': {'association': -1},
+    'NetIntExpense': {'association': -1}
 }
 
 # 同时持有bucket个标的
-bucket = 10
-begin = '2017-01-01'
-end = '2018-12-01'
+bucket = 3
+begin = '2016-01-01'
+end = '2018-09-30'
 
 
 def init(context):
@@ -72,7 +71,7 @@ if __name__ == '__main__':
     target_list = get_code_list('hs300')[['code']]
     target_list = list(target_list['code'])
     print('开始回测 回测因子:', list(back_test_factors.keys()))
-    run_backtest(strategy_name='EqualWeight',
+    run_backtest(strategy_name='MLP',
                  file_path='.',
                  target_list=target_list,
                  frequency='month',

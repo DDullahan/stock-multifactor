@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-  @author DDullahan
-  @date 2019-4-20 20:10
-  @version 1.0
-"""
 from time import sleep
 
 from atrader import *
@@ -11,9 +6,11 @@ import numpy as np
 import pandas as pd
 import datetime as dt
 
+factor = 'PE'
+neg = 1
+
 
 def init(context):
-    factor, neg = read()
     # 注册初始资金1000万
     set_backtest(initial_cash=10000000)
     # 注册因子
@@ -69,13 +66,12 @@ def on_data(context):
 
 
 def start_backtest(begin, end, added):
-    factor, neg = read()
     # 获取成分大于0.35的股份代码
     cons_date = dt.datetime.strptime(begin, '%Y-%m-%d') - dt.timedelta(days=1)
     hs300 = get_code_list('hs300', cons_date)[['code', 'weight']]
     target_list = list(hs300[hs300.weight > 0.35]['code'])
     # 开始回测
-    run_backtest(strategy_name=factor+'-'+added,
+    run_backtest(strategy_name=factor + '-' + added,
                  file_path='.',
                  target_list=target_list,
                  frequency='day',
@@ -85,51 +81,12 @@ def start_backtest(begin, end, added):
                  fq=1)
 
 
-def write(factor, neg):
-    f = open('arg.txt', 'w')
-    f.write(factor + '\n')
-    f.write(str(neg))
-    f.close()
-
-
-def read():
-    f = open('arg.txt', 'r')
-    factor = f.readline().rstrip('\n')
-    neg = int(f.readline().rstrip('\n'))
-    f.close()
-    return factor, neg
-
-
 if __name__ == '__main__':
     # 确定回测时间段
     begin = '2017-01-01'
     end = '2017-12-01'
     # 读取因子名，对其进行单因子回测
-    factors = pd.read_csv('factorName.csv')
-    factors = factors['factor_name']
-    for factor in factors:
-        print('正在回测:', factor)
-        print('回测正相关')
-        write(factor, 1)
-        start_backtest(begin, end, '正')
-        print('回测负相关')
-        write(factor, -1)
-        start_backtest(begin, end, '负')
-        print('回测', factor, '成功')
-        sleep(1)
+    start_backtest(begin, end, '正')
     # 获取回测报告数据
 
-    # 暂停10s等待全部回测报告生成
-    sleep(10)
-    reports = []
-    labels = ['cum_return', 'annu_return', 'max_drawback_rate', 'total_property', 'cum_return_bm', 'alpha', 'beta',
-              'sharpe_ratio', 'info_ratio', 'turnover_rate', 'net_profit']
-    results = get_strategy_id()
-    for result in results:
-        report = get_performance(result['strategy_id'])
-        simple_report = {'strategy_name': result['strategy_name']}
-        for label in labels:
-            simple_report[label] = report[label]
-        reports.append(simple_report)
-    pd.DataFrame(data=reports).to_csv('reports.csv')
     print('所有因子回测结束')
